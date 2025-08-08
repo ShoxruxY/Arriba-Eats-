@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    internal class Restaurant
+    {
+        /// <summary>
+        /// Creating restaurant class in itself
+        /// </summary>
+        public static List<string> restaurantNames = new List<string>();
+        static string input;
+        public static void GetRestaurants()
+        {
+            do
+            {
+                input = Menu.Display(Menu.restaurantOrderPrompt);
+                switch (input)
+                {
+                    case "1":
+                        Console.WriteLine();
+
+                        break;
+                    case "2":
+                        Console.WriteLine();
+                        break;
+                    case "3":
+                        Console.WriteLine();
+                        break;
+                    case "4":
+                        Console.WriteLine();
+                        break;
+                }
+                if(input == "1" || input == "2" || input == "3" || input == "4")
+                {
+                    break;
+                }
+            } while (input != "5");
+        }
+    }
+    internal class Order
+    {
+        
+        public string orderStatus;
+        public string customerEmailAddress;// method to get total orders and amount
+
+
+    }
+}
